@@ -1,0 +1,12 @@
+.head {
+    background: $yellow-gradient;
+    width: 100%;
+    border-bottom: 4px solid $black;
+
+    display: flex;
+    align-items: center;
+}
+
+.head.big-head {
+    height: 600px;
+}
