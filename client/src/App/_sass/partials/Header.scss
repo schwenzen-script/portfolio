@@ -6,6 +6,11 @@
     &__navigation {
         display: flex;
     }
+
+    &__references {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 .header-nav {
@@ -28,6 +33,14 @@
         text-decoration: none;
         color: $black;
         opacity: 0.8;
+    }
+}
+
+.header-icon {
+    margin: 0px 10px;
+
+    img {
+        width: 20px;
     }
 }
 

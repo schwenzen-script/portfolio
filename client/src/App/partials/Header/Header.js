@@ -1,8 +1,11 @@
 import React from 'react';
 
 import { 
-    HeaderNav ,
+    HeaderNav, HeaderIcon ,
 } from '../../components';
+
+import Git from '../../static/icons/github.png';
+import LinkedIn from '../../static/icons/linkedin.png';
 
 const Header = () => {
     return (
@@ -25,7 +28,15 @@ const Header = () => {
             </div>
 
             <div className="header__references">
+                <HeaderIcon
+                    img={Git}
+                    link="https://github.com/schwenzen-script"
+                />
 
+                <HeaderIcon
+                    img={LinkedIn}
+                    link="https://www.linkedin.com/in/jens-deryckere-860b5015a/"
+                />
             </div>
         </div>
     )

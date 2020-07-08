@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { 
-    PageContainer, 
+    PageContainer, Scroll, 
 } from '../components';
 
 import {
@@ -27,6 +27,8 @@ const Home = () => {
                     "text": "Ontdek mijn werk"
                 }}
             />
+
+            <Scroll />
         </PageContainer>
     )
 };
