@@ -2,16 +2,15 @@
     margin-bottom: 100px;
 
     &__content {
-        position: relative;
-        left: -100vw;
-        transition: ease-in-out 1.5s;
-
         &--subtitle {
             font-family: $sofia;
             font-weight: 100;
             letter-spacing: 3px;
             text-transform: uppercase;
             font-size: $size-20;
+            position: relative;
+            left: -100vw;
+            transition: ease-in-out 0.5s;
 
             margin-bottom: 30px;
         }
@@ -20,7 +19,9 @@
             font-family: $proxima;
             font-weight: 100;
             font-size: $size-20;
-
+            position: relative;
+            left: -100vw;
+            transition: ease-in-out 0.5s;
         }
     }
 
@@ -33,6 +34,8 @@
         overflow: hidden;
         border-radius: 100%;
         object-fit: cover;
+
+        transition: ease-in-out 0.5s;
 
         img {
             height: 100%;        

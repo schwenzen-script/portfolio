@@ -6,6 +6,8 @@
 
 .section-title {
     display: inline-block;
+    position: relative;
+    transition: ease-in-out 0.5s;
     
     h2 {
         font-family: $sofia;
@@ -23,6 +25,14 @@
     }
 
     margin-bottom: 50px;
+}
+
+.right-title {
+    right: -100vw;
+}
+
+.left-title {
+    left: -100vw;
 }
 
 .bold-title {

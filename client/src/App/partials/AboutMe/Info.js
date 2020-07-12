@@ -15,7 +15,16 @@ const Info = ({text}) => {
             var top_of_screen = $(window).scrollTop();
         
             if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-                $(".about-info__content").addClass("leftIn")
+                $(".section-title")[0].classList.add("leftIn");
+                $(".about-info__img").addClass("bounceIn");
+
+                setTimeout(() => {
+                    $(".about-info__content--subtitle")[0].classList.add("leftIn");
+
+                    setTimeout(() => {
+                        $(".about-info__content--content")[0].classList.add("leftIn");
+                    }, 300);
+                }, 300);
             }
         });
     });
@@ -27,6 +36,7 @@ const Info = ({text}) => {
                     <div className="about-info__content">
                         <SectionTitle
                             text={text.title}
+                            animation="left-title"
                         />
 
                         <p className="about-info__content--subtitle">

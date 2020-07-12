@@ -10,6 +10,10 @@
         display: flex;
         justify-content: center;
 
+        animation: scroll 2s ease-in-out infinite;
+        -o-animation: scroll 2s ease-in-out infinite;
+        -moz-animation: scroll 2s ease-in-out infinite;
+        -webkit-animation: scroll 2s ease-in-out infinite;
         &--content {
             width: 10px;
             height: 10px;
@@ -26,4 +30,28 @@
     font-weight: 100;
     font-size: $size-11;
     margin-top: 10px;
+}
+
+@keyframes scroll {
+    0% {padding: 3px 0px;}
+    50% {padding: 8px 0px;}
+    100% {padding: 3px 0px;}
+}
+
+@-o-keyframes scroll {
+    0% {padding: 3px 0px;}
+    50% {padding: 8px 0px;}
+    100% {padding: 3px 0px;}
+}
+
+@-moz-keyframes scroll {
+    0% {padding: 3px 0px;}
+    50% {padding: 8px 0px;}
+    100% {padding: 3px 0px;}
+}
+
+@-webkit-keyframes scroll {
+    0% {padding: 3px 0px;}
+    50% {padding: 8px 0px;}
+    100% {padding: 3px 0px;}
 }
