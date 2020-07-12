@@ -1,0 +1,51 @@
+.about-info {
+    margin-bottom: 100px;
+
+    &__content {
+        position: relative;
+        left: -100vw;
+        transition: ease-in-out 1.5s;
+
+        &--subtitle {
+            font-family: $sofia;
+            font-weight: 100;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: $size-20;
+
+            margin-bottom: 30px;
+        }
+
+        &--content {
+            font-family: $proxima;
+            font-weight: 100;
+            font-size: $size-20;
+
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;            
+        width: 260px;
+        height: 260px;
+        overflow: hidden;
+        border-radius: 100%;
+        object-fit: cover;
+
+        img {
+            height: 100%;        
+        }
+    }
+}
+
+.about-skills {
+    margin-top: 50px;
+    
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

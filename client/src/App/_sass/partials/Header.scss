@@ -1,7 +1,11 @@
 .header {
     padding: 0px 80px;
     width: 100%;
+    top: 0;
     position: fixed;
+    z-index: 1000;
+
+    transition: ease-in-out 0.5s;
 
     &__navigation {
         display: flex;
@@ -11,6 +15,10 @@
         margin-top: 20px;
         margin-left: 20px;
     }
+}
+
+.scrolled {
+    top: -50px;
 }
 
 .header-nav {

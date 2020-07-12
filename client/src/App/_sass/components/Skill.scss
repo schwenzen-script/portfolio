@@ -1,0 +1,43 @@
+.skill {
+    margin: 20px;
+    width: 115px;
+
+    &__img {
+        width: 115px;
+        height: 115px;
+        border-radius: 100%;
+        background: $black-gradient;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    &__text {
+        &--title {
+            font-family: $sofia;
+            font-size: $size-20;
+            text-align: center;
+            font-weight: 700;
+            color: $black;
+
+            margin-top: 10px;
+        }
+
+        &--subtitle {
+            font-family: $sofia;
+            font-size: $size-10;
+            text-align: center;
+            font-weight: 100;
+            text-transform: uppercase;
+            color: $black;
+
+            margin-top: -10px;
+        }
+    }
+}

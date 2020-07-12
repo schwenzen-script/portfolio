@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 
 import { 
-    PageContainer, Scroll, 
+    PageContainer, Scroll, Section, 
 } from '../components';
 
 import {
     Head,
+    Info,
+    Skills,
 } from '../partials';
 
 const Home = () => {
@@ -29,6 +31,22 @@ const Home = () => {
             />
 
             <Scroll />
+
+            <Section>
+                <Info
+                    text={{
+                        "title": "Wat over mij?",
+                        "subtitle": "Jens Deryckere",
+                        "content": "Als ik denk aan een portfolio, dan denk ik altijd: “Wat moeten mensen nu over mij weten? Of wat willen ze weten?”. Dan kom ik toch altijd uit bij een aantal optie’s. Passie’s, ervaringen, opleidingen, … The usual stuff eigenlijk. Wel, laten we daar dan eens mee beginnen?"
+                    }}
+                />
+
+                <Skills
+                    text={{
+                        "title": "Belangrijke skills"
+                    }}
+                />
+            </Section>
         </PageContainer>
     )
 };

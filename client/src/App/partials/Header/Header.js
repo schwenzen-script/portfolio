@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { 
     HeaderNav, HeaderIcon ,
 } from '../../components';
 
+import $ from 'jquery';
+
 import Git from '../../static/icons/github.png';
 import LinkedIn from '../../static/icons/linkedin.png';
 
 const Header = () => {
+    useEffect(() => {
+        $(window).scroll(function(){
+            let header = $('.header'), scroll = $(window).scrollTop();
+          
+            if (scroll >= 100) header.addClass('scrolled');
+            else header.removeClass('scrolled');
+          });
+    });
+
     return (
         <div className="header d-flex justify-content-end">
             <div className="header__navigation">

@@ -3,3 +3,7 @@
 @import './mixins';
 @import './components/index.scss';
 @import './partials/index.scss';
+
+html {
+    scroll-behavior: smooth;
+}
