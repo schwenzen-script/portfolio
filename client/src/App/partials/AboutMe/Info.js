@@ -16,13 +16,13 @@ const Info = ({text}) => {
         
             if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
                 $(".section-title")[0].classList.add("leftIn");
-                $(".about-info__img").addClass("bounceIn");
 
                 setTimeout(() => {
                     $(".about-info__content--subtitle")[0].classList.add("leftIn");
 
                     setTimeout(() => {
                         $(".about-info__content--content")[0].classList.add("leftIn");
+                        $(".about-info__img").addClass("bounceIn");
                     }, 300);
                 }, 300);
             }
@@ -34,16 +34,18 @@ const Info = ({text}) => {
             <Row>
                 <Col size="col-md-6 col-12">
                     <div className="about-info__content">
-                        <SectionTitle
-                            text={text.title}
-                            animation="left-title"
-                        />
+                        <div className="d-md-block d-flex justify-content-center">
+                            <SectionTitle
+                                text={text.title}
+                                animation="left-title text-center text-md-left"
+                            />
+                        </div>
 
-                        <p className="about-info__content--subtitle">
+                        <p className="about-info__content--subtitle text-center text-md-left">
                             {text.subtitle}
                         </p>
 
-                        <p className="about-info__content--content">
+                        <p className="about-info__content--content text-center text-md-left">
                             {text.content}
                         </p>
                     </div>

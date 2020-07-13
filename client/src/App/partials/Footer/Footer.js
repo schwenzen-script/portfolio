@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                 </Col>
 
-                <Col size="col-12 col-lg-2 col-md-6 footer__right">
+                <Col size="col-12 col-lg-2 col-md-6 d-md-block d-none footer__right">
                     <h4>
                         Way to go
                     </h4>

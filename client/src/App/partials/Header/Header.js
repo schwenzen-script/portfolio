@@ -20,7 +20,7 @@ const Header = () => {
     });
 
     return (
-        <div className="header d-flex justify-content-end">
+        <div className="header d-md-flex d-none justify-content-end">
             <div className="header__navigation">
                 <HeaderNav 
                     name="Over mij"

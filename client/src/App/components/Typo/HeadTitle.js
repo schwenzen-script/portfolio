@@ -1,8 +1,8 @@
 import React from 'react';
 
-const HeadTitle = ({weight, text}) => {
+const HeadTitle = ({weight, text, extra}) => {
     return (
-        <h1 className={`head-title ${weight}`}>
+        <h1 className={`head-title ${weight} ${extra}`}>
             {text}
         </h1>
     )

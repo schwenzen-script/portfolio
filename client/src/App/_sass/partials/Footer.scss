@@ -29,6 +29,21 @@
                 margin-right: 10px;
             }
         }
+
+        @media (max-width: 768px) {
+            p {
+                text-align: center;
+            }
+
+            h4 {
+                text-align: center;
+            }
+
+            &--ref {
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        }
     }
 
     &__right {

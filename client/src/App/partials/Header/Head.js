@@ -12,23 +12,27 @@ const Head = ({size, text, button}) => {
     return (
         <div className={`head ${size}`}>
             <Container>
-                <Row extra="">
+                <Row extra="d-md-inline-block d-flex justify-content-center">
                     <Col size="d-inline">
-                        <HeadTitle 
-                            weight="bold-title"
-                            text={text.heavy}
-                        />
-                        <HeadTitle 
-                            weight="light-title"
-                            text={text.light}
-                        />
-
-                        <Col size="d-flex justify-content-end">
-                            <MoreButton
-                                text={button.text}
-                                link={button.link}
+                        <span>
+                            <HeadTitle 
+                                weight="bold-title"
+                                text={text.heavy}
+                                extra="text-md-left text-center"
                             />
-                        </Col>
+                            <HeadTitle 
+                                weight="light-title"
+                                text={text.light}
+                                extra="text-md-left text-center"
+                            />
+
+                            <Col size="d-flex justify-content-md-end justify-content-center">
+                                <MoreButton
+                                    text={button.text}
+                                    link={button.link}
+                                />
+                            </Col>
+                        </span>
                     </Col>
                 </Row>
             </Container>

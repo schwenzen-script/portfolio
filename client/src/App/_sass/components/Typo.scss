@@ -4,6 +4,12 @@
     color: $black;
 }
 
+@media (max-width: 768px) {
+    .head-title{
+        font-size: $size-40;
+    }
+}
+
 .section-title {
     display: inline-block;
     position: relative;

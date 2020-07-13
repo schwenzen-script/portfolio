@@ -9,6 +9,7 @@ import {
     Info,
     Skills,
     Redirect,
+    History
 } from '../partials';
 
 const Home = () => {
@@ -48,6 +49,10 @@ const Home = () => {
                     }}
                 />
             </Section>
+
+
+            <History
+            />
 
             <Redirect 
                 text={{
