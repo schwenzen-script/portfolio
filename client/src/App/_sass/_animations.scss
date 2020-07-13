@@ -15,6 +15,57 @@
   -webkit-animation: bounceIn 1s ease-in-out;
 }
 
+.slideCenter {
+  -webkit-animation: slide-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -moz-animation: slide-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -o-animation: slide-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+
+@-o-keyframes slide-center{
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+
+@-moz-keyframes slide-center{
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+
+@keyframes slide-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+
 @keyframes bounceIn{
     0%{
       opacity: 0;

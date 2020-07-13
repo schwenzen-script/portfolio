@@ -5,7 +5,7 @@ import {
 } from '../components';
 
 import { 
-    Header,
+    Header, Footer,
 } from '../partials';
 
 const Default = ({children}) => {
@@ -14,6 +14,8 @@ const Default = ({children}) => {
             <Header />
             
             {children}
+
+            <Footer />
         </App>
     )
 };

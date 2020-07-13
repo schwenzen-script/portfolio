@@ -1,0 +1,43 @@
+.redirect-section {
+    background: $yellow-gradient;
+    padding: 120px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $white;
+
+    margin-top: 200px;
+
+    h2 {
+        font-family: $sofia;
+        font-size: $size-40;
+        color: $black;
+        font-weight: 800;
+    }
+
+    h4 {
+        font-family: $sofia;
+        font-size: $size-25;
+        color: $black;
+        font-weight: 200;
+    }
+
+    a {
+        border: 5px solid $black;
+        font-size: $size-20;
+        color: $black;
+        font-family: $sofia;
+        padding: 5px 20px;
+
+        transition: ease-in-out 0.5s;
+
+        margin-top: 30px;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: $black;
+        background-color: $white;
+    }
+}

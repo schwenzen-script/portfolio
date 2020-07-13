@@ -8,6 +8,7 @@ import {
     Head,
     Info,
     Skills,
+    Redirect,
 } from '../partials';
 
 const Home = () => {
@@ -47,6 +48,14 @@ const Home = () => {
                     }}
                 />
             </Section>
+
+            <Redirect 
+                text={{
+                    "title": "Want to see something?",
+                    "subtitle": "Bekijk enkele werken van mij!",
+                    "link": "/work",
+                }}
+            />
         </PageContainer>
     )
 };
