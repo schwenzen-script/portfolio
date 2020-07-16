@@ -25,9 +25,37 @@ const Default = ({children}) => {
             const hamburger = $(".hamburger");
             setTimeout(() => {
                 hamburger.addClass("topDown");
+
+                const hamburgerexit = $(".hamburger__exit");
+                setTimeout(() => {
+                    hamburgerexit.addClass("buttonAppear");
+                }, 500);
             }, 500);
         }, 1000);
     };
+
+    const hideHamburger = () => {
+        const hamburgerexit = $(".hamburger__exit");
+        const hamburger = $(".hamburger");
+
+        hamburgerexit.removeClass("buttonAppear")
+        hamburgerexit.addClass("buttonPress");
+
+        setTimeout(() => {
+            hamburger.removeClass("topDown");
+            hamburger.addClass("topUp");
+
+            setTimeout(() => {
+                setHamburger(false);
+                const hamburgerbtn = $(".hamburger-button");
+                hamburgerbtn.addClass("buttonAppear");
+
+                setTimeout(() => {
+                    hamburgerbtn.removeClass("buttonAppear");
+                }, 1000);
+            }, 1000);
+        }, 500);
+    }
 
     return (
         <App>
@@ -35,7 +63,9 @@ const Default = ({children}) => {
 
             {
                 hamburger ? (
-                    <Hamburger/>
+                    <Hamburger
+                        handle={hideHamburger}
+                    />
                 ) 
                 : (            
                     <HamburgerButton 

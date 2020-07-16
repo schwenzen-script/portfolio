@@ -14,6 +14,10 @@
   top: 0 !important;
 }
 
+.topUp {
+  top: -500px !important;
+}
+
 .visible {
   opacity: 1 !important;
 }
@@ -35,17 +39,17 @@
 }
 
 .buttonPress {
-  animation: buttonPress 1s ease-in forwards;
-  -o-animation: buttonPress 1s ease-in forwards;
-  -moz-animation: buttonPress 1s ease-in forwards;
-  -webkit-animation: buttonPress 1s ease-in forwards;
+  animation: buttonPress 1s ease-in-out forwards;
+  -o-animation: buttonPress 1s ease-in-out forwards;
+  -moz-animation: buttonPress 1s ease-in-out forwards;
+  -webkit-animation: buttonPress 1s ease-in-out forwards;
 }
 
 .buttonAppear {
-  animation: buttonAppear 1s ease-in forwards;
-  -o-animation: buttonAppear 1s ease-in forwards;
-  -moz-animation: buttonAppear 1s ease-in forwards;
-  -webkit-animation: buttonAppear 1s ease-in forwards;
+  animation: buttonAppear 1s ease-in-out forwards;
+  -o-animation: buttonAppear 1s ease-in-out forwards;
+  -moz-animation: buttonAppear 1s ease-in-out forwards;
+  -webkit-animation: buttonAppear 1s ease-in-out forwards;
 }
 
  @-webkit-keyframes slide-center {

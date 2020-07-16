@@ -17,6 +17,7 @@ import {
   Home, 
   Work,
   Contact,
+  NotFound,
 } from './pages';
 
 import * as Routes from './routes';
@@ -30,6 +31,7 @@ function App() {
         <GivenRoute exact path={Routes.HOME_ROUTE} layout={Default} component={Home} />
         <GivenRoute exact path={Routes.WORK_ROUTE} layout={Default} component={Work} />
         <GivenRoute exact path={Routes.CONTACT_ROUTE} layout={Default} component={Contact} />
+        <GivenRoute path="*" layout={Default} component={NotFound} />
       </Switch>
     </Router>
   );
