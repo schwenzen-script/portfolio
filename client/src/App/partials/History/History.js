@@ -9,44 +9,48 @@ import $ from 'jquery'
 const History = () => {
     useEffect(() => {
         $(window).scroll(function() {
-            var top_of_element = $(".history").offset().top;
-            var bottom_of_element = $(".history").offset().top + $(".history").outerHeight();
-            var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-            var top_of_screen = $(window).scrollTop();
-        
-            if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-                $(".section-title")[2].classList.add("leftIn");
-            };
+            if ($(".history").length !== 0) {
+                var top_of_element = $(".history").offset().top;
+                var bottom_of_element = $(".history").offset().top + $(".history").outerHeight();
+                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+                var top_of_screen = $(window).scrollTop();
+            
+                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+                    $(".section-title")[2].classList.add("leftIn");
+                };
+            }
         });
 
         $(window).scroll(function() {
-            var top_of_element = $(".history-point__route--point").eq(0).offset().top;
-            var bottom_of_element = $(".history-point__route--point").eq(0).offset().top + $(".history-point__route--point").eq(0).outerHeight();
-            var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-            var top_of_screen = $(window).scrollTop();
+            if ($(".history-point__route--point").length !== 0) {
+                var top_of_element = $(".history-point__route--point").eq(0).offset().top;
+                var bottom_of_element = $(".history-point__route--point").eq(0).offset().top + $(".history-point__route--point").eq(0).outerHeight();
+                var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+                var top_of_screen = $(window).scrollTop();
+            
+                if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+                    for (let index = 0; index < 3; index++) {
+                        $(".history-point").eq(index).addClass("grow-point");
+                        $(".history-point__route--point").eq(index).addClass("bounceIn");
         
-            if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-                for (let index = 0; index < 3; index++) {
-                    $(".history-point").eq(index).addClass("grow-point");
-                    $(".history-point__route--point").eq(index).addClass("bounceIn");
-    
-                    setTimeout(() => {
-                        $(".history-point__date").eq(index).addClass("leftIn");
-    
                         setTimeout(() => {
-                            $(".history-point__text--title").eq(index).addClass("rightIn");
-    
+                            $(".history-point__date").eq(index).addClass("leftIn");
+        
                             setTimeout(() => {
-                                $(".history-point__text--subtitle").eq(index).addClass("rightIn");
-    
+                                $(".history-point__text--title").eq(index).addClass("rightIn");
+        
                                 setTimeout(() => {
-                                    $(".history-point__text--content").eq(index).addClass("rightIn");
+                                    $(".history-point__text--subtitle").eq(index).addClass("rightIn");
+        
+                                    setTimeout(() => {
+                                        $(".history-point__text--content").eq(index).addClass("rightIn");
+                                    }, 200)
                                 }, 200)
-                            }, 200)
-                        }, 500)
-                    }, 1500);
-                }
-            };
+                            }, 500)
+                        }, 1500);
+                    }
+                };
+            }
         });
     });
 

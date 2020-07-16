@@ -26,12 +26,18 @@ const Head = ({size, text, button}) => {
                                 extra="text-md-left text-center"
                             />
 
-                            <Col size="d-flex justify-content-md-end justify-content-center">
-                                <MoreButton
-                                    text={button.text}
-                                    link={button.link}
-                                />
-                            </Col>
+                            {
+                                button ? (
+                                    <Col size="d-flex justify-content-md-end justify-content-center">
+                                        <MoreButton
+                                            text={button.text}
+                                            link={button.link}
+                                        />
+                                    </Col>
+                                ) : (
+                                    ""
+                                )
+                            }
                         </span>
                     </Col>
                 </Row>

@@ -1,7 +1,10 @@
 .footer {
     background-color: $black;
     padding: 30px 50px 0px 50px;
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
     &__left {
         h4 {
             color: $white;

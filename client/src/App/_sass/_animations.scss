@@ -6,6 +6,18 @@
   right: 0 !important;
 }
 
+.bottomUp {
+  bottom: auto !important;
+}
+
+.topDown {
+  top: 0 !important;
+}
+
+.visible {
+  opacity: 1 !important;
+}
+
 .bounceIn {
   opacity: 1 !important;
 
@@ -20,6 +32,20 @@
   animation: slide-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   -moz-animation: slide-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   -o-animation: slide-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.buttonPress {
+  animation: buttonPress 1s ease-in forwards;
+  -o-animation: buttonPress 1s ease-in forwards;
+  -moz-animation: buttonPress 1s ease-in forwards;
+  -webkit-animation: buttonPress 1s ease-in forwards;
+}
+
+.buttonAppear {
+  animation: buttonAppear 1s ease-in forwards;
+  -o-animation: buttonAppear 1s ease-in forwards;
+  -moz-animation: buttonAppear 1s ease-in forwards;
+  -webkit-animation: buttonAppear 1s ease-in forwards;
 }
 
  @-webkit-keyframes slide-center {
@@ -63,6 +89,126 @@
   100% {
     -webkit-transform: translateZ(160px);
             transform: translateZ(160px);
+  }
+}
+
+@keyframes buttonAppear{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes buttonAppear{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes buttonAppear{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes buttonAppear{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes buttonPress{
+  0%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@-o-keyframes buttonPress{
+  0%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@-moz-keyframes buttonPress{
+  0%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@-webkit-keyframes buttonPress{
+  0%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(0);
   }
 }
 

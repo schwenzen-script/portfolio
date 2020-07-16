@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
             <Row extra="justify-content-between">
                 <Col size="col-12 col-md-6 footer__left">
                     <h4>
@@ -21,11 +21,11 @@ const Footer = () => {
                     </p>
 
                     <div className="footer__left--ref">
-                        <a href="/">
+                        <a href="https://github.com/schwenzen-script" rel="noopener noreferrer" target="_blank">
                             <img src={Github} alt="github" />
                         </a>
 
-                        <a href="/">
+                        <a href="https://www.linkedin.com/in/jens-deryckere-860b5015a/" rel="noopener noreferrer" target="_blank">
                             <img src={Linkedin} alt="linkedin" />
                         </a>
                     </div>
@@ -38,9 +38,8 @@ const Footer = () => {
 
                     <ul>
                         <li><NavLink to="/">Over mij</NavLink></li>
-                        <li><NavLink to="/">Mijn werk</NavLink></li>
-                        <li><NavLink to="/">Contact</NavLink></li>
-                        <li><NavLink to="/">Privacy Policy</NavLink></li>
+                        <li><NavLink to="/work">Mijn werk</NavLink></li>
+                        <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </Col>
             </Row>
@@ -52,7 +51,7 @@ const Footer = () => {
                     </p>
                 </Col>
             </Row>
-        </div>
+        </footer>
     )
 };
 

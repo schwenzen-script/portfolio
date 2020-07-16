@@ -1,0 +1,38 @@
+.contact-box {
+    width: 100%;
+    background-color: $white;
+    border-radius: 20px;
+    padding: 40px 80px;
+    margin-bottom: 150px;
+
+    h1 {
+        font-family: $sofia;
+        font-size: $size-30;
+        color: $black;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__links {
+        margin-top: 50px;
+
+        &--ref {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            img {
+                width: 30px;
+                margin-right: 20px;
+            }
+
+            p {
+                margin: 0;
+                font-family: $proxima;
+                font-size: $size-15;
+                color: $black;
+                text-decoration: underline;
+            }
+        }
+    }
+}

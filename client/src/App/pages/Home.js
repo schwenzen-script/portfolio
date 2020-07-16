@@ -16,6 +16,9 @@ const Home = () => {
     useEffect(() => {
         document.title = "Jens Deryckere | Over Mij";
         document.getElementsByClassName("header-nav")[0].classList.add("onpage");
+
+        document.getElementsByClassName("header-nav")[1].classList.remove("onpage");
+        document.getElementsByClassName("header-nav")[2].classList.remove("onpage");
     });
 
     return (
