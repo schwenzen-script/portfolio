@@ -5,6 +5,9 @@ import { Head, WorkItems, Redirect } from '../partials';
 const Work = () => {
     useEffect(() => {
         document.title = "Jens Deryckere | My Work";
+
+        window.scrollTo(0, 0);
+
         document.getElementsByClassName("header-nav")[1].classList.add("onpage");
 
         document.getElementsByClassName("header-nav")[0].classList.remove("onpage");

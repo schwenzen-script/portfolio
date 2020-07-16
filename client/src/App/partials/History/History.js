@@ -70,7 +70,7 @@ const History = () => {
                     event={{
                         "title": "Opleiding KTA Brugge",
                         "function": "Student TSO - Sportwetenschappen",
-                        "content": "Even iets heel anders, hé? Van origine ben ik dus een sporter en dit ben ik niet afgeleerd. Wekelijks ben ik nog vaak op pad met de koersfiets. Jaren deed ik dit in competitie maar bij aanvang van mijn studie's leek het me het geschikte moment om de competitie (even?) vaarwel te zeggen.",
+                        "content": "Even iets heel anders, hé? Van origine ben ik dus een sporter en dit ben ik niet afgeleerd. Wekelijks ben ik nog vaak op pad met de koersfiets. Jaren deed ik dit in competitie maar bij aanvang van mijn studies leek het me het geschikte moment om de competitie (even?) vaarwel te zeggen.",
                         "start": "2012",
                         "end": "2018",
                     }}

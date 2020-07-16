@@ -15,6 +15,9 @@ import {
 const Home = () => {
     useEffect(() => {
         document.title = "Jens Deryckere | Over Mij";
+
+        window.scrollTo(0, 0);
+
         document.getElementsByClassName("header-nav")[0].classList.add("onpage");
 
         document.getElementsByClassName("header-nav")[1].classList.remove("onpage");
@@ -27,7 +30,7 @@ const Home = () => {
                 size="big-head"
                 text={{
                     "heavy": "Jens Deryckere.",
-                    "light": "En een developer.",
+                    "light": "Full-Stack Developer.",
                 }}
                 button={{
                     "link": "/work",
@@ -42,7 +45,7 @@ const Home = () => {
                     text={{
                         "title": "Wat over mij?",
                         "subtitle": "Jens Deryckere",
-                        "content": "Als ik denk aan een portfolio, dan denk ik altijd: “Wat moeten mensen nu over mij weten? Of wat willen ze weten?”. Dan kom ik toch altijd uit bij een aantal optie’s. Passie’s, ervaringen, opleidingen, … The usual stuff eigenlijk. Wel, laten we daar dan eens mee beginnen?"
+                        "content": "Als ik denk aan een portfolio, dan denk ik altijd: “Wat moeten mensen nu over mij weten? Of wat willen ze weten?”. Dan kom ik toch altijd uit bij een aantal opties. Passies, ervaringen, opleidingen, … The usual stuff eigenlijk. Wel, laten we daar dan eens mee beginnen?"
                     }}
                 />
 

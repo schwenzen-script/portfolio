@@ -7,6 +7,8 @@ const NotFound = () => {
     useEffect(() => {
         document.title = "Jens Deryckere | Not Found";
 
+        window.scrollTo(0, 0);
+
         document.getElementsByClassName("header-nav")[2].classList.remove("onpage");
         document.getElementsByClassName("header-nav")[0].classList.remove("onpage");
         document.getElementsByClassName("header-nav")[1].classList.remove("onpage");

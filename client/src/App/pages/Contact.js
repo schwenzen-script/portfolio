@@ -6,6 +6,9 @@ import { Head, Contact as ContactBox } from '../partials';
 const Contact = () => {
     useEffect(() => {
         document.title = "Jens Deryckere | Contact Me";
+
+        window.scrollTo(0, 0);
+
         document.getElementsByClassName("header-nav")[2].classList.add("onpage");
 
         document.getElementsByClassName("header-nav")[0].classList.remove("onpage");
